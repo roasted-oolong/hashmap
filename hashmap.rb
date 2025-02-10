@@ -15,15 +15,6 @@ class HashMap
 
   def set(key, value)
     #takes two arguments, the first is a key and the second is a value that is assigned to this key
-  end
-
-  def get(key)
-    #takes one argument as a key and returns the value that is assigned to this key
-    #If key is not found, return nil
-  end
-
-  def has?(key)
-    #takes a key as an argument and returns true or false based on whether or not the key is in the hash map
     #If a key already exists, then the old value is overwritten or we can say that we update the key’s value 
     #(e.g. Carlos is our key but it is called twice: once with value I am the old value., and once with value I am the new value.. 
     #From the logic stated above, Carlos should contain only the latter value).
@@ -37,6 +28,15 @@ class HashMap
     #Some of the methods in this assignment that are mentioned later could be reused to help you handle that growth logic more easily. 
     #So you may want to hold onto implementing your growing functionality just for now. 
     #However, the reason why we mention it with #set is because it’s important to grow buckets exactly when they are being expanded.
+  end
+
+  def get(key)
+    #takes one argument as a key and returns the value that is assigned to this key
+    #If key is not found, return nil
+  end
+
+  def has?(key)
+    #takes a key as an argument and returns true or false based on whether or not the key is in the hash map
   end
 
   def remove(key)
